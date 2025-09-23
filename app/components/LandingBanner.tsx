@@ -148,7 +148,7 @@ export default function LandingBanner() {
               whileHover={{ scale: 1.05, borderColor: "rgba(255, 107, 157, 0.6)" }}
             >
               <span className="text-festival-pink font-semibold text-sm md:text-base">
-                Exclusive for 2nd Year KMEC
+                Exclusive for 2nd and 3rd Year KMEC
               </span>
             </motion.div>
           </motion.div>

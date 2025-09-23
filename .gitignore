@@ -38,3 +38,7 @@ next-env.d.ts
 
 # OS
 Thumbs.db
+
+git add .
+git commit -m "yes"
+git push -u origin main 

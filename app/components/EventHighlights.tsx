@@ -4,59 +4,59 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 
 const events = [
-  { 
-    icon: '🎶', 
+  {
+    icon: '🎶',
     title: 'Singing', subtitle: 'Stage Performance', color: 'from-festival-pink to-festival-magenta',
     category: 'stage', description: 'Showcase your vocal talents and mesmerize the audience'
   },
-  { 
-    icon: '💃', 
+  {
+    icon: '💃',
     title: 'Dance', subtitle: 'Stage Performance', color: 'from-festival-orange to-festival-yellow',
     category: 'stage', description: 'Express yourself through graceful movements and rhythm'
   },
 
-  { 
-    icon: '🎤', 
+  {
+    icon: '🎤',
     title: 'Open Mic', subtitle: 'Standup, Storytelling & More', color: 'from-festival-teal to-festival-lime',
     category: 'stage', description: 'Share your unique talent and connect with the audience'
   },
-  { 
-    icon: '🕵️', 
+  {
+    icon: '🕵️',
     title: 'Atrangi QR Quest', subtitle: 'Mystery Adventure', color: 'from-festival-magenta to-festival-pink',
     category: 'interactive', description: 'Solve puzzles and embark on a thrilling campus adventure'
   },
-  { 
-    icon: '🔥', 
+  {
+    icon: '🔥',
     title: 'Dance Together', subtitle: 'groove to music', color: 'from-festival-yellow to-festival-orange',
     category: 'interactive', description: 'Join the crowd and dance to electrifying beats'
   },
-  { 
-    icon: '🎬', 
+  {
+    icon: '🎬',
     title: 'Guess the Movie', subtitle: 'Picture-based Game', color: 'from-festival-lime to-festival-teal',
     category: 'games', description: 'Test your movie knowledge with visual clues'
   },
-  { 
-    icon: '🎨', 
+  {
+    icon: '🎨',
     title: 'Face Painting', subtitle: 'Artistic Expression', color: 'from-festival-pink to-festival-purple',
     category: 'creative', description: 'Transform your face into a canvas of vibrant art'
   },
-  { 
-    icon: '🎯', 
+  {
+    icon: '🎯',
     title: 'Dart Throw', subtitle: 'Skill Challenge', color: 'from-festival-orange to-festival-magenta',
     category: 'games', description: 'Test your precision and aim for the bullseye'
   },
-  { 
-    icon: '🖌️', 
+  {
+    icon: '🖌️',
     title: 'Mehendi', subtitle: 'Traditional Art', color: 'from-festival-teal to-festival-yellow',
     category: 'creative', description: 'Adorn your hands with beautiful henna designs'
   },
-  { 
-    icon: '📸', 
+  {
+    icon: '📸',
     title: 'Polaroid Corners', subtitle: 'Instant Memories', color: 'from-festival-purple to-festival-lime',
     category: 'creative', description: 'Capture and create instant memories with friends'
   },
-  { 
-    icon: '⏳', 
+  {
+    icon: '⏳',
     title: 'Time Capsule', subtitle: 'This capsule will be opened exactly at the end of college', color: 'from-festival-magenta to-festival-teal',
     category: 'interactive', description: 'This capsule will be opened exactly at the end of college'
   }
@@ -74,8 +74,8 @@ export default function EventHighlights() {
   const [activeFilter, setActiveFilter] = useState('all')
   const [hoveredEvent, setHoveredEvent] = useState<string | null>(null)
 
-  const filteredEvents = activeFilter === 'all' 
-    ? events 
+  const filteredEvents = activeFilter === 'all'
+    ? events
     : events.filter(event => event.category === activeFilter)
 
   return (
@@ -108,11 +108,10 @@ export default function EventHighlights() {
               <button
                 key={category.filter}
                 onClick={() => setActiveFilter(category.filter)}
-                className={`px-6 py-3 rounded-full font-semibold transition-all duration-200 transform hover:scale-105 active:scale-95 ${
-                  activeFilter === category.filter
-                    ? 'bg-gradient-to-r from-festival-pink to-festival-orange text-white shadow-lg'
-                    : 'bg-gray-700/50 text-gray-300 hover:bg-gray-600/50'
-                }`}
+                className={`px-6 py-3 rounded-full font-semibold transition-all duration-200 transform hover:scale-105 active:scale-95 ${activeFilter === category.filter
+                  ? 'bg-gradient-to-r from-festival-pink to-festival-orange text-white shadow-lg'
+                  : 'bg-gray-700/50 text-gray-300 hover:bg-gray-600/50'
+                  }`}
               >
                 {category.name}
               </button>
@@ -127,8 +126,8 @@ export default function EventHighlights() {
               key={event.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ 
-                duration: 0.4, 
+              transition={{
+                duration: 0.4,
                 delay: index * 0.03,
                 ease: "easeOut"
               }}
@@ -138,7 +137,7 @@ export default function EventHighlights() {
               onHoverEnd={() => setHoveredEvent(null)}
             >
               <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700/50 rounded-2xl md:rounded-3xl p-4 md:p-6 h-full cursor-pointer relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-festival-pink/20 min-h-[180px] md:min-h-[220px]">
-              
+
                 {/* Animated Background Gradient */}
                 <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300"
@@ -155,20 +154,19 @@ export default function EventHighlights() {
                     </span>
                   </div>
                 </div>
-                
+
                 {/* Content */}
                 <div className="text-center relative z-10">
                   <h3 className="text-white font-bold text-base md:text-xl mb-1 md:mb-2 transition-colors duration-300 group-hover:text-festival-pink leading-tight">
                     {event.title}
                   </h3>
-                  
+
                   <p className="text-gray-400 text-xs md:text-sm mb-2 md:mb-3 font-medium transition-colors duration-300 group-hover:text-gray-300 leading-tight">
                     {event.subtitle}
                   </p>
 
-                  <p className={`text-gray-500 text-xs leading-relaxed transition-all duration-300 overflow-hidden ${
-                    hoveredEvent === event.title ? 'max-h-16 md:max-h-20 opacity-100' : 'max-h-0 opacity-0'
-                  }`}>
+                  <p className={`text-gray-500 text-xs leading-relaxed transition-all duration-300 overflow-hidden ${hoveredEvent === event.title ? 'max-h-16 md:max-h-20 opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
                     {event.description}
                   </p>
                 </div>
