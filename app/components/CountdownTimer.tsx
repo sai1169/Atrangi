@@ -33,6 +33,13 @@ export default function CountdownTimer() {
     return () => clearInterval(timer)
   }, [])
 
+  const timeUnits = [
+    { label: 'Days', value: timeLeft.days },
+    { label: 'Hours', value: timeLeft.hours },
+    { label: 'Minutes', value: timeLeft.minutes },
+    { label: 'Seconds', value: timeLeft.seconds }
+  ]
+
   return (
     <section className="py-12 px-6 bg-transparent">
       <div className="max-w-3xl mx-auto">
@@ -48,12 +55,7 @@ export default function CountdownTimer() {
           </h3>
           
           <div className="flex justify-center items-center gap-4 md:gap-8 mb-6">
-            {[
-              { label: 'Days', value: timeLeft.days },
-              { label: 'Hours', value: timeLeft.hours },
-              { label: 'Minutes', value: timeLeft.minutes },
-              { label: 'Seconds', value: timeLeft.seconds }
-            ].map((unit, index) => (
+            {timeUnits.map((unit) => (
               <div key={unit.label} className="text-center">
                 <motion.div
                   key={unit.value}
@@ -68,7 +70,7 @@ export default function CountdownTimer() {
                   <div className="text-xs md:text-sm text-gray-300 uppercase tracking-wide">
                     {unit.label}
                   </div>
-                </div>
+                </motion.div>
               </div>
             ))}
           </div>
