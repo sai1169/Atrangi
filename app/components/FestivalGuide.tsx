@@ -13,42 +13,42 @@ interface Tip {
 
 const tips: Tip[] = [
   {
-    icon: '耳',
+    icon: '🤪',
     title: 'Embrace the Chaos',
     description: 'Come ready to get messy, laugh loud, and dance like nobody\'s watching!',
     hasImage: true,
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFOUvl1jnEKz1P5nPQm9egDOi5GkKSA2NYnA&s'
   },
   {
-    icon: '導',
+    icon: '📸',
     title: 'Capture Everything',
     description: 'Document every colorful moment - these memories will be priceless!',
     hasImage: true,
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbsgPB1Yl-UXPFhZkKWHBrOydwZi1zLboFDg&s'
   },
   {
-    icon: '挑',
+    icon: '💧',
     title: 'Stay Hydrated',
     description: 'Dancing and celebrating is thirsty work - keep that energy up!',
     hasImage: true,
     imageUrl: 'https://media.tenor.com/4NIDZ_Pl0i0AAAAe/drinking-water.png'
   },
   {
-    icon: '',
+    icon: '😊',
     title: 'Don\'t Be Shy',
     description: 'Channel your inner confidence - introduce yourself to someone new and make connections!',
     hasImage: true,
     imageUrl: 'https://pbs.twimg.com/media/G0yh5EaasAA8WEZ.jpg'
   },
   {
-    icon: '鹿',
+    icon: '🙌',
     title: 'Participate Fully',
     description: 'Don\'t be a wallflower - join the activities, sing along, and be part of the magic!',
     hasImage: true,
     imageUrl: 'https://deadline.com/wp-content/uploads/2021/05/152740_1402_V2.jpg?w=681&h=383&crop=1'
   },
   {
-    icon: '笞｡',
+    icon: '⚡',
     title: 'Bring Your Energy',
     description: 'Your enthusiasm is contagious - the more energy you bring, the better it gets for everyone!',
     hasImage: true,
@@ -225,7 +225,7 @@ export default function FestivalGuide() {
             >
               <div className="bg-gradient-to-r from-festival-pink/20 to-festival-orange/20 backdrop-blur-sm border border-festival-pink/30 rounded-2xl p-6 max-w-xl mx-auto">
                 <h4 className="text-xl font-bold text-white mb-3">
-                  Remember: You Are the Art! 耳
+                  Remember: You Are the Art! 🎉
                 </h4>
                 <p className="text-gray-300 text-base">
                   The most important thing you can wear is your smile and enthusiasm. 
