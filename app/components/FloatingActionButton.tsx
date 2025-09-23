@@ -24,7 +24,7 @@ export default function FloatingActionButton() {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="fixed bottom-8 right-8 z-40"
+          className="fixed bottom-8 right-4 z-40"
           initial={{ scale: 0, rotate: -180 }}
           animate={{ scale: 1, rotate: 0 }}
           exit={{ scale: 0, rotate: 180 }}
@@ -40,7 +40,7 @@ export default function FloatingActionButton() {
           >
             {/* Main Button */}
             <motion.div
-              className="w-16 h-16 bg-gradient-to-r from-festival-pink to-festival-orange rounded-full shadow-2xl flex items-center justify-center text-white text-2xl font-bold relative overflow-hidden"
+              className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-r from-festival-pink to-festival-orange rounded-full shadow-2xl flex items-center justify-center text-white text-xl md:text-2xl font-bold relative overflow-hidden"
               animate={{
                 boxShadow: [
                   "0 10px 30px rgba(255, 107, 157, 0.4)",

@@ -1,25 +1,44 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function ConfettiButton() {
   const [isExploding, setIsExploding] = useState(false)
   const [showTooltip, setShowTooltip] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
+
+  // Show button only after loading screen and some scroll
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const handleScroll = () => {
+        setIsVisible(window.scrollY > 200)
+      }
+      
+      window.addEventListener('scroll', handleScroll)
+      handleScroll() // Check initial position
+      
+      return () => window.removeEventListener('scroll', handleScroll)
+    }, 3000) // Wait 3 seconds for loading screen to finish
+
+    return () => clearTimeout(timer)
+  }, [])
 
   const triggerConfetti = () => {
     setIsExploding(true)
     setTimeout(() => setIsExploding(false), 3000)
   }
 
+  if (!isVisible) return null
+
   return (
-    <div className="fixed bottom-8 left-8 z-50 md:bottom-32 md:right-8 md:left-auto">
+    <div className="fixed bottom-8 left-4 z-40 md:bottom-32 md:right-8 md:left-auto">
       <div className="relative group">
         <motion.button
           onClick={triggerConfetti}
           onTouchStart={() => setShowTooltip(true)}
           onTouchEnd={() => setTimeout(() => setShowTooltip(false), 2000)}
-          className="w-16 h-16 bg-gradient-to-r from-festival-yellow to-festival-orange rounded-full shadow-2xl flex items-center justify-center relative overflow-hidden"
+          className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-r from-festival-yellow to-festival-orange rounded-full shadow-2xl flex items-center justify-center relative overflow-hidden"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           animate={{
@@ -31,7 +50,7 @@ export default function ConfettiButton() {
           }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          <span className="text-2xl">🎉</span>
+          <span className="text-xl md:text-2xl">🎉</span>
           
           {/* Ripple Effect */}
           <motion.div
