@@ -63,9 +63,7 @@ export default function Footer() {
             Celebrate, Create, Cherish
           </motion.p>
           
-          <p className="text-gray-500">
-            Made with 💖 for the Atrangi community
-          </p>
+
         </motion.div>
       </div>
     </footer>
