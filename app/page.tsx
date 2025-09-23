@@ -20,10 +20,10 @@ export default function Home() {
         <LandingBanner />
         <CountdownTimer />
         <EventHighlights />
-        <FestivalGuide />
         <div id="registration">
           <RegistrationSection />
         </div>
+        <FestivalGuide />
         <Footer />
         <FloatingActionButton />
         <ConfettiButton />
