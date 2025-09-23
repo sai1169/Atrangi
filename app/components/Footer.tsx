@@ -63,6 +63,15 @@ export default function Footer() {
             Celebrate, Create, Cherish
           </motion.p>
           
+          <motion.p
+            className="text-gray-500 text-sm mt-4"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Webpage cooked by Ramakanth KMEC 28'
+          </motion.p>
 
         </motion.div>
       </div>
