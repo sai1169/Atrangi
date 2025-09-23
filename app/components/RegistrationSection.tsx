@@ -22,7 +22,7 @@ const registrationEvents = [
     title: 'Open Mic', 
     description: 'Share your unique talent with everyone',
     color: 'from-festival-teal to-festival-lime',
-    formLink: '#'
+    formLink: 'https://forms.gle/br41UpWkU7CLWFUW8'
   }
 ]
 

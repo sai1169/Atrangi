@@ -14,11 +14,7 @@ const events = [
     title: 'Dance', subtitle: 'Stage Performance', color: 'from-festival-orange to-festival-yellow',
     category: 'stage', description: 'Express yourself through graceful movements and rhythm'
   },
-  { 
-    icon: '🎭', 
-    title: 'Skit', subtitle: 'Drama & Theatre', color: 'from-festival-purple to-festival-teal',
-    category: 'stage', description: 'Bring stories to life with dramatic performances'
-  },
+
   { 
     icon: '🎤', 
     title: 'Open Mic', subtitle: 'Standup, Storytelling & More', color: 'from-festival-teal to-festival-lime',
