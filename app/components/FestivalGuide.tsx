@@ -17,7 +17,7 @@ const tips: Tip[] = [
     title: 'Embrace the Chaos',
     description: 'Come ready to get messy, laugh loud, and dance like nobody\'s watching!',
     hasImage: true,
-    imageUrl: 'https://tenor.com/en-GB/view/chaos-gif-22919457'
+    imageUrl: 'https://media.tenor.com/YOb4R8NSKiMAAAAM/chaos-gif.gif'
   },
   {
     icon: '📱',
@@ -31,7 +31,7 @@ const tips: Tip[] = [
     title: 'Stay Hydrated',
     description: 'Dancing and celebrating is thirsty work - keep that energy up!',
     hasImage: true,
-    imageUrl: 'https://tenor.com/en-GB/view/shaquille-o-neal-nervous-guilty-whoops-sips-water-gif-15296230'
+    imageUrl: 'https://media.tenor.com/Zv8Zqos_5OQAAAAM/shaquille-o-neal-nervous.gif'
   },
   {
     icon: '😎',
@@ -149,10 +149,10 @@ export default function FestivalGuide() {
                 }`}
               >
                 {tip.hasImage && (
-                  <div className="absolute inset-0 opacity-10">
+                  <div className="absolute inset-0 opacity-20">
                     <img 
                       src={tip.imageUrl} 
-                      alt="Don't be shy meme"
+                      alt={`${tip.title} meme`}
                       className="w-full h-full object-cover rounded-2xl"
                     />
                   </div>
@@ -161,15 +161,6 @@ export default function FestivalGuide() {
                   <div className="text-3xl mb-3">{tip.icon}</div>
                   <h3 className="text-white font-bold text-lg mb-2">{tip.title}</h3>
                   <p className="text-gray-300 text-sm leading-relaxed">{tip.description}</p>
-                  {tip.hasImage && (
-                    <div className="mt-3 flex justify-center">
-                      <img 
-                        src={tip.imageUrl} 
-                        alt="Don't be shy - Gojo confidence"
-                        className="w-20 h-20 object-cover rounded-xl border-2 border-festival-pink/30 shadow-lg"
-                      />
-                    </div>
-                  )}
                 </div>
               </motion.div>
             ))}
