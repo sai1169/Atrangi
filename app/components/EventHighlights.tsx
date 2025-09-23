@@ -103,7 +103,7 @@ export default function EventHighlights() {
             Experience Atrangi
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12">
-            Dive into a world of colors, creativity, and celebration
+            Dive into a world of fun, creativity, and celebration
           </p>
 
           {/* Category Filter */}

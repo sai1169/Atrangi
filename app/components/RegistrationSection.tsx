@@ -18,13 +18,6 @@ const registrationEvents = [
     formLink: 'https://forms.gle/s4UAkV1A3ZhHxE7r9'
   },
   { 
-    icon: '🎭', 
-    title: 'Skit', 
-    description: 'Recreate a movie scene with your gang',
-    color: 'from-festival-purple to-festival-teal',
-    formLink: '#'
-  },
-  { 
     icon: '🎤', 
     title: 'Open Mic', 
     description: 'Share your unique talent with everyone',
@@ -65,7 +58,7 @@ export default function RegistrationSection() {
           <div className="w-24 h-1 bg-gradient-to-r from-festival-pink to-festival-orange mx-auto rounded-full"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {registrationEvents.map((event, index) => (
             <motion.div
               key={event.title}
