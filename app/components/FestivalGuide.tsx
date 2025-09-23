@@ -149,7 +149,7 @@ export default function FestivalGuide() {
                 }`}
               >
                 {tip.hasImage && (
-                  <div className="absolute inset-0 opacity-20">
+                  <div className="absolute inset-0 opacity-30 z-0">
                     <img 
                       src={tip.imageUrl} 
                       alt={`${tip.title} meme`}
@@ -157,7 +157,7 @@ export default function FestivalGuide() {
                     />
                   </div>
                 )}
-                <div className="relative z-10">
+                <div className="relative z-20">
                   <div className="text-3xl mb-3">{tip.icon}</div>
                   <h3 className="text-white font-bold text-lg mb-2">{tip.title}</h3>
                   <p className="text-gray-300 text-sm leading-relaxed">{tip.description}</p>
