@@ -17,7 +17,7 @@ const tips: Tip[] = [
     title: 'Embrace the Chaos',
     description: 'Come ready to get messy, laugh loud, and dance like nobody\'s watching!',
     hasImage: true,
-    imageUrl: 'https://media.tenor.com/YOb4R8NSKiMAAAAM/chaos-gif.gif'
+    imageUrl: 'https://media1.tenor.com/m/YOb4R8NSKiMAAAAC/chaos-gif.gif'
   },
   {
     icon: '📱',
@@ -31,7 +31,7 @@ const tips: Tip[] = [
     title: 'Stay Hydrated',
     description: 'Dancing and celebrating is thirsty work - keep that energy up!',
     hasImage: true,
-    imageUrl: 'https://media.tenor.com/Zv8Zqos_5OQAAAAM/shaquille-o-neal-nervous.gif'
+    imageUrl: 'https://media1.tenor.com/m/Zv8Zqos_5OQAAAAC/shaquille-o-neal-nervous.gif'
   },
   {
     icon: '😎',
