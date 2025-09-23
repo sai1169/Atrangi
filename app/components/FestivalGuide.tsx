@@ -3,7 +3,15 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
-const tips = [
+interface Tip {
+  icon: string
+  title: string
+  description: string
+  hasImage?: boolean
+  imageUrl?: string
+}
+
+const tips: Tip[] = [
   {
     icon: '🎨',
     title: 'Embrace the Chaos',
@@ -22,7 +30,9 @@ const tips = [
   {
     icon: '😎',
     title: 'Don\'t Be Shy',
-    description: 'Channel your inner confidence - introduce yourself to someone new and make connections!'
+    description: 'Channel your inner confidence - introduce yourself to someone new and make connections!',
+    hasImage: true,
+    imageUrl: 'https://pbs.twimg.com/media/G0yh5EaasAA8WEZ.jpg'
   },
   {
     icon: '🎭',
@@ -124,11 +134,33 @@ export default function FestivalGuide() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-gray-800/40 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-4 hover:bg-gray-700/40 transition-all duration-300"
+                className={`bg-gray-800/40 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-4 hover:bg-gray-700/40 transition-all duration-300 ${
+                  tip.hasImage ? 'relative overflow-hidden' : ''
+                }`}
               >
-                <div className="text-3xl mb-3">{tip.icon}</div>
-                <h3 className="text-white font-bold text-lg mb-2">{tip.title}</h3>
-                <p className="text-gray-300 text-sm leading-relaxed">{tip.description}</p>
+                {tip.hasImage && (
+                  <div className="absolute inset-0 opacity-10">
+                    <img 
+                      src={tip.imageUrl} 
+                      alt="Don't be shy meme"
+                      className="w-full h-full object-cover rounded-2xl"
+                    />
+                  </div>
+                )}
+                <div className="relative z-10">
+                  <div className="text-3xl mb-3">{tip.icon}</div>
+                  <h3 className="text-white font-bold text-lg mb-2">{tip.title}</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed">{tip.description}</p>
+                  {tip.hasImage && (
+                    <div className="mt-3 flex justify-center">
+                      <img 
+                        src={tip.imageUrl} 
+                        alt="Don't be shy - Gojo confidence"
+                        className="w-20 h-20 object-cover rounded-xl border-2 border-festival-pink/30 shadow-lg"
+                      />
+                    </div>
+                  )}
+                </div>
               </motion.div>
             ))}
           </motion.div>
