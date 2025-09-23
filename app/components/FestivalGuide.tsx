@@ -13,42 +13,42 @@ interface Tip {
 
 const tips: Tip[] = [
   {
-    icon: '🎨',
+    icon: '耳',
     title: 'Embrace the Chaos',
     description: 'Come ready to get messy, laugh loud, and dance like nobody\'s watching!',
     hasImage: true,
-    imageUrl: 'https://media1.tenor.com/m/YOb4R8NSKiMAAAAC/chaos-gif.gif'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFOUvl1jnEKz1P5nPQm9egDOi5GkKSA2NYnA&s'
   },
   {
-    icon: '📱',
+    icon: '導',
     title: 'Capture Everything',
     description: 'Document every colorful moment - these memories will be priceless!',
     hasImage: true,
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbsgPB1Yl-UXPFhZkKWHBrOydwZi1zLboFDg&s'
   },
   {
-    icon: '💧',
+    icon: '挑',
     title: 'Stay Hydrated',
     description: 'Dancing and celebrating is thirsty work - keep that energy up!',
     hasImage: true,
-    imageUrl: 'https://media1.tenor.com/m/Zv8Zqos_5OQAAAAC/shaquille-o-neal-nervous.gif'
+    imageUrl: 'https://media.tenor.com/4NIDZ_Pl0i0AAAAe/drinking-water.png'
   },
   {
-    icon: '😎',
+    icon: '',
     title: 'Don\'t Be Shy',
     description: 'Channel your inner confidence - introduce yourself to someone new and make connections!',
     hasImage: true,
     imageUrl: 'https://pbs.twimg.com/media/G0yh5EaasAA8WEZ.jpg'
   },
   {
-    icon: '🎭',
+    icon: '鹿',
     title: 'Participate Fully',
     description: 'Don\'t be a wallflower - join the activities, sing along, and be part of the magic!',
     hasImage: true,
     imageUrl: 'https://deadline.com/wp-content/uploads/2021/05/152740_1402_V2.jpg?w=681&h=383&crop=1'
   },
   {
-    icon: '⚡',
+    icon: '笞｡',
     title: 'Bring Your Energy',
     description: 'Your enthusiasm is contagious - the more energy you bring, the better it gets for everyone!',
     hasImage: true,
@@ -149,7 +149,7 @@ export default function FestivalGuide() {
                 }`}
               >
                 {tip.hasImage && (
-                  <div className="absolute inset-0 opacity-30 z-0">
+                  <div className="absolute inset-0 opacity-20">
                     <img 
                       src={tip.imageUrl} 
                       alt={`${tip.title} meme`}
@@ -157,7 +157,7 @@ export default function FestivalGuide() {
                     />
                   </div>
                 )}
-                <div className="relative z-20">
+                <div className="relative z-10">
                   <div className="text-3xl mb-3">{tip.icon}</div>
                   <h3 className="text-white font-bold text-lg mb-2">{tip.title}</h3>
                   <p className="text-gray-300 text-sm leading-relaxed">{tip.description}</p>
@@ -225,7 +225,7 @@ export default function FestivalGuide() {
             >
               <div className="bg-gradient-to-r from-festival-pink/20 to-festival-orange/20 backdrop-blur-sm border border-festival-pink/30 rounded-2xl p-6 max-w-xl mx-auto">
                 <h4 className="text-xl font-bold text-white mb-3">
-                  Remember: You Are the Art! 🎨
+                  Remember: You Are the Art! 耳
                 </h4>
                 <p className="text-gray-300 text-base">
                   The most important thing you can wear is your smile and enthusiasm. 
