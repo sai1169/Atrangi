@@ -15,17 +15,23 @@ const tips: Tip[] = [
   {
     icon: '🎨',
     title: 'Embrace the Chaos',
-    description: 'Come ready to get messy, laugh loud, and dance like nobody\'s watching!'
+    description: 'Come ready to get messy, laugh loud, and dance like nobody\'s watching!',
+    hasImage: true,
+    imageUrl: 'https://tenor.com/en-GB/view/chaos-gif-22919457'
   },
   {
     icon: '📱',
     title: 'Capture Everything',
-    description: 'Document every colorful moment - these memories will be priceless!'
+    description: 'Document every colorful moment - these memories will be priceless!',
+    hasImage: true,
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbsgPB1Yl-UXPFhZkKWHBrOydwZi1zLboFDg&s'
   },
   {
     icon: '💧',
     title: 'Stay Hydrated',
-    description: 'Dancing and celebrating is thirsty work - keep that energy up!'
+    description: 'Dancing and celebrating is thirsty work - keep that energy up!',
+    hasImage: true,
+    imageUrl: 'https://tenor.com/en-GB/view/shaquille-o-neal-nervous-guilty-whoops-sips-water-gif-15296230'
   },
   {
     icon: '😎',
@@ -37,12 +43,16 @@ const tips: Tip[] = [
   {
     icon: '🎭',
     title: 'Participate Fully',
-    description: 'Don\'t be a wallflower - join the activities, sing along, and be part of the magic!'
+    description: 'Don\'t be a wallflower - join the activities, sing along, and be part of the magic!',
+    hasImage: true,
+    imageUrl: 'https://deadline.com/wp-content/uploads/2021/05/152740_1402_V2.jpg?w=681&h=383&crop=1'
   },
   {
     icon: '⚡',
     title: 'Bring Your Energy',
-    description: 'Your enthusiasm is contagious - the more energy you bring, the better it gets for everyone!'
+    description: 'Your enthusiasm is contagious - the more energy you bring, the better it gets for everyone!',
+    hasImage: true,
+    imageUrl: 'https://pbs.twimg.com/media/FLERi0bVQAM1yy-.jpg'
   }
 ]
 
