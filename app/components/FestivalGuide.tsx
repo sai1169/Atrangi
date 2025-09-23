@@ -12,7 +12,7 @@ const tips = [
   {
     icon: '📱',
     title: 'Capture Everything',
-    description: 'Bring your phone in a waterproof case - you\'ll want to document every colorful moment!'
+    description: 'Document every colorful moment - these memories will be priceless!'
   },
   {
     icon: '💧',
@@ -20,9 +20,9 @@ const tips = [
     description: 'Dancing and celebrating is thirsty work - keep that energy up!'
   },
   {
-    icon: '🤝',
-    title: 'Make New Friends',
-    description: 'Atrangi is about connections - introduce yourself to someone new!'
+    icon: '😎',
+    title: 'Don\'t Be Shy',
+    description: 'Channel your inner confidence - introduce yourself to someone new and make connections!'
   },
   {
     icon: '🎭',
