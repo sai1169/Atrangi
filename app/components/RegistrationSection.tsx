@@ -8,19 +8,19 @@ const registrationEvents = [
     title: 'Singing', 
     description: 'Showcase your vocal talents on stage',
     color: 'from-festival-pink to-festival-magenta',
-    formLink: '#' // You'll replace this with actual Google Form links
+    formLink: 'https://forms.gle/rXdTo24x2WzoyQw7A'
   },
   { 
     icon: '💃', 
     title: 'Dance', 
     description: 'Express yourself through movement',
     color: 'from-festival-orange to-festival-yellow',
-    formLink: '#'
+    formLink: 'https://forms.gle/s4UAkV1A3ZhHxE7r9'
   },
   { 
     icon: '🎭', 
     title: 'Skit', 
-    description: 'Bring stories to life with drama',
+    description: 'Recreate a movie scene with your gang',
     color: 'from-festival-purple to-festival-teal',
     formLink: '#'
   },
