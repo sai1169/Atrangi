@@ -20,7 +20,7 @@ const events = [
     title: 'Open Mic', subtitle: 'Standup, Storytelling & More', color: 'from-festival-teal to-festival-lime',
     category: 'stage', description: 'Share your unique talent and connect with the audience'
   },
-  {
+  /*{
     icon: '🕵️',
     title: 'Atrangi QR Quest', subtitle: 'Mystery Adventure', color: 'from-festival-magenta to-festival-pink',
     category: 'interactive', description: 'Solve puzzles and embark on a thrilling campus adventure'
@@ -30,11 +30,13 @@ const events = [
     title: 'Dance Together', subtitle: 'groove to music', color: 'from-festival-yellow to-festival-orange',
     category: 'interactive', description: 'Join the crowd and dance to electrifying beats'
   },
+  */
   {
     icon: '🎬',
     title: 'Guess the Movie', subtitle: 'Picture-based Game', color: 'from-festival-lime to-festival-teal',
     category: 'games', description: 'Test your movie knowledge with visual clues'
   },
+  /*
   {
     icon: '🎨',
     title: 'Face Painting', subtitle: 'Artistic Expression', color: 'from-festival-pink to-festival-purple',
@@ -54,7 +56,7 @@ const events = [
     icon: '📸',
     title: 'Polaroid Corners', subtitle: 'Instant Memories', color: 'from-festival-purple to-festival-lime',
     category: 'creative', description: 'Capture and create instant memories with friends'
-  },
+  },*/
   {
     icon: '⏳',
     title: 'Time Capsule', subtitle: 'This capsule will be opened exactly at the end of college', color: 'from-festival-magenta to-festival-teal',
