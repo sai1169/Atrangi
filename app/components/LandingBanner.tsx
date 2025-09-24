@@ -159,7 +159,7 @@ export default function LandingBanner() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1.4, duration: 0.8 }}
           >
-            Join the rhythm of celebration and paint your world with joy
+            To summarise: this is just a fun event for us 2nd years 
           </motion.p>
           
           <motion.div 
